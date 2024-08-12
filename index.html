@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>ADS/Trainee - Loureiro</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script> 
+</head>
+
+<body>
+    <div class="site-background"></div>
+    <!-- Resto do seu conteúdo -->
+<div class="background-container">
+	
+    <!-- Cabeçalho -->
+    
+	<header id="cabecalho"> 
+		<div class="site-container"><!-- Nova div adicionada para englobar todo o conteúdo do site -->
+			<div class="header-content">
+				<!-- Atualizamos para exibir a data/hora no formato anterior -->
+                <span id="hora-atual"></span><!-- Adicionar o elemento <span> com id="hora-atual" para exibir a mensagem de hora -->
+					<div class="logo-container">
+						<img src="imagens/Loureiro.jpg" alt="Logo" class="logo">
+					</div>
+            </div>
+						<h1>Meu Site</h1>
+						<div id="interface">
+							<hgroup>
+								<h1>Bom dia, boa tarde, boa noite, para o Mundo!</h1>
+								<h2>Para haver Desenvolvimento, tem que haver AMOR!</h2>
+								<h3>Análise e Desenvolvimento de Sistemas - ADS</h3>
+							</hgroup>
+							<nav id="menu"><!-- Seu menu de navegação pode ser adicionado aqui -->
+								<h1>Menu Principal</h1>
+									<ul type="disc">
+										<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/home.png')"><a href="index.html">Home</a></li>
+										<li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+										<li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="contato.html">Contato</a></li>
+									</ul>
+							</nav>
+						</div>
+		</div>
+	</header>
+    
+    <!-- Corpo do site -->
+    <div class="site-container"> <!-- Nova div adicionada para englobar todo o conteúdo do site -->
+        <div class="card-container front-blue">
+		            <!-- Card 1 -->
+            <div class="card" onclick="virarCard(this)">
+                <div class="card-inner">
+                    <div class="card-front card-front-blue"> <!-- Adicione a classe "card-front-blue" para a frente do card 1 -->
+                        <h2>CLIQUE AQUI - Cursos</h2>
+                       	<p>IA e o Novo conceito da cultura digital</p>
+						<p>Web Analytics</p>
+						<p>Excel Avançado</p>
+						<p>C#</p>
+						<p>HTML Avançado</p>
+						<p>HTML5</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
+						<p>Java avançado</p>
+						<p>Implementação BD SQL</p>
+						<p>SQL Server</p>
+						<p>Modelagem B.D</p>
+                    </div>
+                    <div class="card-back card-back-#ffff33">
+                        <h2>CLIQUE AQUI - Instituições</h2>
+                        <p>UNISUAM</p>
+						<p>CURSOS EM VÍDEOS</p>
+						<p>FUNDAÇÃO BRADESCO</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" onclick="virarCard(this)">
+                <div class="card-inner">
+                    <div class="card-front card-front-blue"><!-- Adicione a classe "card-front-blue" para a frente do card 1 -->
+                        <h2>CLIQUE AQUI - Acadêmico</h2>
+						<p>2° período ADS</p>
+                        <p>Bachalelado em Geografia</p>
+						<p>Licenciatura Plena em Geografia</p>
+						<p>Especialização Docência E.Superior</p>
+                    </div>
+                    <div class="card-back card-back-#ffff33">
+                        <h2>CLIQUE AQUI - Universidades</h2>
+                        <p>UNISUAM</p>
+						<p>UFRJ</p>
+						<p>UCB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <!-- Rodapé -->
+    <footer class="footer">
+        <!-- Conteúdo do rodapé -->
+        <P><p align=center><font size="4" color="#ff0000"><i>Lembre-se: quanto mais se ensina, mais se aprende.</i></font size></P>
+        <p>Todos os direitos reservados © 2023 Antonio Loureiro</p>
+        <p><a href="https://www.linkedin.com/in/antonio-loureiro-78b359263/" target="_blank">Linkedin</a></p>
+		<p class="indented-paragraph">
+			Agradecimentos: 
+			<a href="link-da-madalena">Madalena Loureiro</a>. 
+			<a href="https://gbloureiro.neocities.org/">Gabriel Loureiro</a>. 
+			<a href="link-do-rafael">Rafael Loureiro</a>. 
+			<a href="https://www.scapesaude.com/">Leonília Lemos</a>. 
+			<a href="https://www.cursoemvideo.com/">Curso em Vídeos - Guanabara</a>. 
+			<a href="https://www.ev.org.br/">Fundação Bradesco</a>. 
+			<a href="https://hs.unisuam.edu.br/">Unisuam</a>.
+			<a href="https://www.youtube.com/">YouTube</a>.
+		</p>
+    </footer>
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+@charset="utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+		font-family: 'FonteLogo';
+		src: url("C:\Users\Thamyres\Desktop\Site\font/bubblegum-sans-regular.otf");
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;/*hsl(165,81%,93%,0.5);*/
+	color: rgba(0,0,0,1);
+}
+
+div#interface {
+	width: 900px;
+	background-color: #ffffff;
+	margin: 0px auto 0px auto;
+	box-shadow: 0px 0px 10px black;
+	padding: 10px;
+}
+
+		h1 {
+			font-family: Arial;
+			font-size: 30pt;
+			color: blue;
+			text-shadow: 2px 5px 2px black;
+		}
+			
+		p {
+			text-align:justify;
+			text-indent:50px;
+		}
+		
+		a {
+			color: #616259;
+		}
+		
+		a:hover {
+			text-decoration: underline;
+		}
+		
+header#cabecalho img#icone {
+	position: absolute;
+	left: 850px;
+	top: 80px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #585960 solid;
+	height: 150px;
+	background: url("../imagens/contato.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px;
+	color: #596061;
+	text-shadow: 0px 1px 2px rgba(1,1,1,.5);
+	padding: 0px;
+	margin-bottom: 0px; 
+}
+
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15px;
+	margin-top: 0px;
+}
+			
+/*Formatação de imagens com legenda.*/
+
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+		width: 100%;
+		height: 100%;
+}
+
+figure.foto-legenda figcaption {
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		background-color: rgba(0,0,0,.4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: opacity 1s;
+}
+		
+figure.foto-legenda: hover figcaption {
+	opacity: 1;
+}
+
+/*Formatação do menu*/
+nav#menu {
+    position: absolute;
+    top: 45px;
+    right: 225px; /* Ajuste conforme necessário */
+    display: flex; /* Para alinhar os itens na mesma linha */
+}
+
+nav#menu ul {
+    display: flex;
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dcdcdc;
+	padding: 4px;
+	margin: 6px;
+	margin-right: 0px;
+	text-transform: uppercase;
+	transition: background-color 1s;
+	-ms-transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #708090;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	color: #556B2F;
+	text-decoration: underline;
+}
+
+nav#menu a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+section#corpo { /* corpo divide lateralmente*/
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px solid green;
+	padding-right: 20px;
+}
+/*
+article#noticia-principal h2 {
+	font-size: 16px;
+	color: #606059;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}*/
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #585960;
+	text-shadow: 0px 1px 2px rgba(1,1,1,.5);
+}
+/*
+.direita {
+	text-align: right;
+}*/
+
+header#cabecalho-artigo h2 {
+	font-size: 16pt;
+	color: #585960;
+	background-color: #dddddd;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 16pt;
+	color: #585960;
+	
+}
+
+table#tabelaspec {
+	border: 1px solid #585960;
+	border-spacing: 0px; /*para acabar com distância entre margens da célula*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaspec td {
+	border: 1px dashed #585960;
+	padding: 5px;
+	/*text-align: center;/right/left
+	vertical-align: bottom;/top/
+	vertical-align: middle;(para centralizar)*/
+}
+
+table#tabelaspec td.ce {
+	color: #ffffff;
+	background-color: #585960;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+table#tabelaspec td.CD {
+	background-color: #cecece;
+}
+
+table#tabelaspec caption {
+	color: #888888;
+	font-size: 12pt;
+	font-weight: bolder;
+}
+
+table#tabelaspec span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8px;
+	margin-top: 10px;
+}
+
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgb(0,0,0,0,.5);
+	margin-top: 0px;
+}
+
+aside#lateral h1 {
+	font-family: 'FonteLogo' sans-serif;
+	font-size: 20pt;
+	color: #585960;
+}
+
+aside#lateral h2 {
+	background-color: #585960;
+	font-size: 20pt;
+	color: #ffffff;
+	padding: 5px;
+}
+
+footer#rodape {
+	clear: both; /*limpa configuração dos 2 lados*/
+	border-top: 1px solid #585960;
+}
+
+footer#rodape p {
+	text-align: center;
+}
+

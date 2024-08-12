@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Multimídia</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/media.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<script language="javascript" src="javaScript/funcoes.js"></script>
+
+<body>
+
+<div id="interface">
+	<header id="cabecalho">
+<hgroup>
+	<h1>Para relaxar um pouco.</h1>
+	<h2>A revolução, é uma construção, sempre esteve 'chegando'.</h2>
+</hgroup>
+	
+<img id="icone"src="imagens/multimidia.png"/>
+<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul type="disc">
+		<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/home.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="contato.html">Contato</a></li>
+	</ul>
+</nav>
+	</header>
+
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabeçalho-artigo">
+			<hgroup>
+				<h3>Multimídia</h3>
+				<h1>Sons e vídeos</h1>
+				<h2>por Loureiro</h2>
+				<h3 class="direita">Atualizado em 09/Agosto/2023</h3>
+			</hgroup>
+		</header>
+				<p class="indented-paragraph">Veja que este espaço está constantemente sendo aprimorado. Desfrute as mídias.</p>
+								
+		<div id="tv-radio">
+			<audio id="musica" controls="controls">
+				<source src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/><!--a tag type não tem fechamento então usa a />-->
+				<source src="media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac"/><!--a tag type não tem fechamento então usa a />-->
+				<source src="media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/><!--a tag type não tem fechamento então usa a />-->
+				Lamentamos, mas não foi possível carregar o arquivo.
+			</audio>
+			<h5><p class="indented-paragraph">Fonte: <a href="https://youtube/vRI2u1v4uCM">https://youtube/vRI2u1v4uCM</a>, em 09/Agosto/2023, às 19:04h.</p></h5>
+		</div>
+		
+			<div class="video-container">
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/SWm1uvCRfvA" title="Lenine - Paciência (Lenine In Cité)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				
+			</div>
+	</article>
+</section>
+
+	<!-- Rodapé -->
+	<footer id="rodape">
+		<footer class="footer">
+        <!-- Conteúdo do rodapé -->
+        <P><p align=center><font size="4" color="#ff0000"><i>Lembre-se: quanto mais se ensina, mais se aprende.</i></font size></P>
+        <p>Todos os direitos reservados © 2023 Antonio Loureiro</p>
+        <p><a href="https://www.linkedin.com/in/antonio-loureiro-78b359263/" target="_blank">Linkedin</a></p>
+    </footer>
+</div>
+</body>
+</html>
+

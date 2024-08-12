@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Fale Conosco.</title>
+	<link rel="stylesheet" href="css/estilo.css"/>
+	
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Multimídia</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/estilo15.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<script language="javascript" src="javascript/funcoes.js"></script><!--NÃO ESTÁ FUNCIONANDOMCOM A FUNÇÃO FORA DO HTML-->
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Comunicação.</h1>
+			<h2>&nbsp;&nbsp;&nbsp;&nbsp;Ela faz muita diferença.</h2>
+			<style>
+				.destaque {
+				color: red;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			</style>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;<h3 class="destaque">LAMENTO!&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;PÁGINA EM MANUTENÇÃO.</h3></p>
+		</hgroup>
+			
+		<img id="icone" src="imagens/contato.png">
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/home.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+				<li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header
+	
+	<section id="corpo">	
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;<h3 class="destaque"> SITE COM OBJETIVO DE ESTUDO. NÃO TEM USO COMERCIAL.</h3></p>
+				<h1>Formulário de Contato</h1>
+				<h2>por Loureiro</h2>
+				<h3 class="direita">Atualizado em 09/Agosto/2023</h3>
+			</hgroup>
+		</header>
+	</article>
+	</section>
+
+<form>
+
+<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+    <p>Nome:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtnome" id="txtnome" min="0"></p>
+    <p>Sobre  nome:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtsnome" id="txtsnome" min="0"></p>
+    <p>E  -  mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtemail" id="txtemail" min="0"></p>
+	<p>Telefone(DDD):<input type="number" name="txttel" id="txttel" min="0"></p>
+	<p>C P F:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="txtcpf" id="txtcpf" min="0"></p>
+	<p>C N P J :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="txtcep" id="txtcep" min="0"></p>
+</fieldset>
+
+	<section>
+		<div>
+			<p>Ano de nascimento: 
+				<input type="number" name="txtano" id="txtano" min="0">
+			</p>
+			<p>Sexo:
+				<input type="radio" name="radsex" id="masc" checked>
+				<label for="masc">Masculino</label>
+				<input type="radio" name="radsex" id="fem">
+				<label for="fem">Feminino</label>
+			</p>
+		</div>
+	</section>
+	
+
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p>Logradouro:<input type="text" name="txtlograd" id="txtlograd" min="0"></p>
+    <p>Número :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="txtnr" id="txtnr" min="0"></p>
+    <p>Bairro :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtbairro" id="txtbairro" min="0"></p>
+    <p>Cidade :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtcid" id="txtcid" min="0"></p>
+	<p>Estado :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtest" id="txtest" min="0"></p>
+	<p>C E P :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtcep" id="txtcep" min="0"></p>
+</fieldset>
+
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência: Mín.   </label><input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5"/>  Máx.</p>
+    <p><label for="cMsg">Mensagem:</label><Textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Digite sua mensagem."></textarea></p>
+</fieldset>
+
+<fieldset id="pedir"><legend>Quero um software também!</legend>
+    <p>Gostaria de adquirir um software padronizado.</p>
+    <p><label for="cMsg">Finalidade:</label><Textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Digite sua mensagem."></textarea></p>
+    <p>Pessoa:
+				<input type="radio" name="radsex" id="masc" checked>
+				<label for="masc">Física</label>
+				<input type="radio" name="radsex" id="fem">
+				<label for="fem">Jurídica</label>
+	</p>
+</fieldset>
+</form>
+	<div id="botton">
+		<p><input type="button" value="ENVIAR" onclick="enviar()"></p>
+	</div>
+	<!-- Rodapé -->
+	<footer id="rodape">
+	<footer class="footer">
+        <P><p align=center><font size="4" color="#ff0000"><i>Lembre-se: quanto mais se ensina, mais se aprende.</i></font size></P>
+        <p>Todos os direitos reservados © 2023 Antonio Loureiro</p>
+        <p><a href="https://www.linkedin.com/in/antonio-loureiro-78b359263/" target="_blank">Linkedin</a></p>
+    </footer>
+	<script src="script15.js"></script>
+</div>
+</body>
+</html>

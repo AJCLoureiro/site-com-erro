@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+audio#musica {
+	display: block;
+	position: relative;
+	left: 275px;
+	top: 50px;
+	width: 300px;
+}
+
+video#filme {
+	display: block;
+	position: relative;
+	left: 220px;
+	top: 10px;
+	width: 440px;
+}
+.video-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+/* Estilo para o parágrafo com margem à esquerda */
+.indented-paragraph {
+    margin-left: 160px; /* Ajuste este valor conforme necessário */
+	padding-top: 50px;
+}
+
